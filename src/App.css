@@ -1,0 +1,13 @@
+.App {
+   text-align: center;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+/* :root{
+   background-image: url(C:\Users\AngelPrz\Desktop\rick_and_morty\src\components\Card\space-universe-planets-dark-background-stars-uncountable-abstract-wallpaper-preview.jpg);
+} */

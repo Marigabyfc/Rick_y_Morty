@@ -1,0 +1,6 @@
+.imgabout {
+    height: 400px;
+    width: 350px;
+    margin-top: 40px;
+    flex-direction: column;
+}

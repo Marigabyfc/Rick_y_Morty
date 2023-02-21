@@ -1,9 +1,9 @@
 import Card from './Card/Card';
-import "./Card/Cardmodule.css";
+
 
 
 export default function Cards({characters, onClose}) {
-    return (<div className='div222'>
+    return (<div>
          {characters.map((elem) =>{
            return (<Card
            key ={elem.id}

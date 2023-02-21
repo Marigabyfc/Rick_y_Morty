@@ -9,6 +9,7 @@ import { Route, Routes, useLocation, useNavigate} from 'react-router-dom'
 import About from './components/About/About'
 import Detail from './components/Detail/Detail'
 import Form from './components/Form/Form'
+import Favorite from './components/Favorite/Favorite'
 
 
 
@@ -23,7 +24,7 @@ const navigate = useNavigate();
 const [access, setAccess] = React.useState(false)
 
 const username = "mariana@hotmail.com"
-const password = "1234567"
+const password = "marianagflores1234"
 
 React.useEffect(() => {
   !access && navigate('/');
@@ -58,13 +59,13 @@ const onClose = (id) =>{
     <div className='App' style={{ padding: '25px' }}>
       {location.pathname === "/" ? <Form login ={login} /> : <Nav onSearch={onSearch}/>}
       <Routes>
-        {/* <Route path= "/" element={<Form/>}/> */}
         <Route path='/home' element={<Cards
           onClose={onClose}
           characters={characters} 
-        />}/>
+          />}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/detail/:detailId' element={<Detail/>}/>
+        <Route path= "/favorite" element={<Favorite/>}/>
       </Routes>
     </div>
   )
